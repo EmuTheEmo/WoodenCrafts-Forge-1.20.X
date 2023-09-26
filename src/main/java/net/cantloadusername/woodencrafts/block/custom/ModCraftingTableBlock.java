@@ -16,7 +16,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class ModCraftingTableBlock extends CraftingTableBlock {
-
     private static final Component CONTAINER_TITLE = Component.translatable("container.crafting");
 
     public ModCraftingTableBlock(Properties pProperties) {

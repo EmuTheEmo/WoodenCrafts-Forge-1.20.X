@@ -13,7 +13,6 @@ import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.inventory.Slot;
 
 public class ModCraftingScreen extends AbstractContainerScreen<ModCraftingTableMenu> implements RecipeUpdateListener {
-
     private static final ResourceLocation TEXTURE =
             new ResourceLocation("textures/gui/container/crafting_table.png");
     private static final ResourceLocation RECIPE_BUTTON_LOCATION =
