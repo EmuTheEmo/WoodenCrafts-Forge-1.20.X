@@ -18,7 +18,7 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ACACIA_STICK.get()))
                     .title(Component.translatable("wc.items_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.ACACIA_STICK.get());
+                        pOutput.accept(ModBlocks.ACACIA_CRAFTING_TABLE.get());
 
                         pOutput.accept(ModBlocks.ACACIA_CRAFTING_TABLE.get());
                     })

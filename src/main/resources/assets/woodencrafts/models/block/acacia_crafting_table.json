@@ -1,6 +1,7 @@
 {
   "parent": "minecraft:block/cube",
   "textures": {
+
     "down": "minecraft:block/acacia_planks",
     "east": "woodencrafts:block/acacia_crafting_table_side",
     "north": "woodencrafts:block/acacia_crafting_table_front",

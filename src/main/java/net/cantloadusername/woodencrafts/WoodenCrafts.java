@@ -23,6 +23,7 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(WoodenCrafts.MOD_ID)
 public class WoodenCrafts {
+
     public static final String MOD_ID = "woodencrafts";
     private static final Logger LOGGER = LogUtils.getLogger();
 

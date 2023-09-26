@@ -17,6 +17,7 @@ import net.minecraft.world.level.Level;
 import java.util.Optional;
 
 public class ModCraftingTableMenu extends RecipeBookMenu<CraftingContainer> {
+
     private final CraftingContainer craftSlots = new TransientCraftingContainer(this, 3, 3);
     private final ResultContainer resultSlots = new ResultContainer();
     private final ContainerLevelAccess access;
