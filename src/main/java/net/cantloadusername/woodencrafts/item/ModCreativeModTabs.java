@@ -16,12 +16,20 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WoodenCrafts.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> WOODENCRAFTS_ITEMS = CREATIVE_MODE_TABS.register("woodencrafts_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ACACIA_STICK.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ACACIA_CRAFTING_TABLE.get()))
                     .title(Component.translatable("wc.items_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModBlocks.ACACIA_CRAFTING_TABLE.get());
 
                         pOutput.accept(ModBlocks.ACACIA_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.BAMBOO_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.BIRCH_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.CHERRY_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.CRIMSON_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.DARK_OAK_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.JUNGLE_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.MANGROVE_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.SPRUCE_CRAFTING_TABLE.get());
+                        pOutput.accept(ModBlocks.WARPED_CRAFTING_TABLE.get());
                     })
                     .build());
 

@@ -104,7 +104,16 @@ public class ModCraftingTableMenu extends RecipeBookMenu<CraftingContainer> {
     // Determines whether supplied player can user this container
     @Override
     public boolean stillValid(Player pPlayer) {
-        return stillValid(this.access, pPlayer, ModBlocks.ACACIA_CRAFTING_TABLE.get());
+        return stillValid(this.access, pPlayer, ModBlocks.ACACIA_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.BAMBOO_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.BIRCH_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.CHERRY_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.CRIMSON_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.DARK_OAK_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.JUNGLE_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.MANGROVE_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.SPRUCE_CRAFTING_TABLE.get()) ||
+                stillValid(this.access, pPlayer, ModBlocks.WARPED_CRAFTING_TABLE.get());
     }
 
     // Handle when the stack in slot {@Code index} is shift-clicked. Normally this moves the stack between the player

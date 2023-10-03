@@ -2,6 +2,15 @@
   "item.woodencrafts.acacia_stick": "Acacia Stick",
 
   "block.woodencrafts.acacia_crafting_table": "Acacia Crafting Table",
+  "block.woodencrafts.bamboo_crafting_table": "Bamboo Crafting Table",
+  "block.woodencrafts.birch_crafting_table": "Birch Crafting Table",
+  "block.woodencrafts.cherry_crafting_table": "Cherry Crafting Table",
+  "block.woodencrafts.crimson_crafting_table": "Crimson Crafting Table",
+  "block.woodencrafts.dark_oak_crafting_table": "Dark Oak Crafting Table",
+  "block.woodencrafts.jungle_crafting_table": "Jungle Crafting Table",
+  "block.woodencrafts.mangrove_crafting_table": "Mangrove Crafting Table",
+  "block.woodencrafts.spruce_crafting_table": "Spruce Crafting Table",
+  "block.woodencrafts.warped_crafting_table": "Warped Crafting Table",
 
 
   "wc.items_tab": "Wooden Crafts Blocks"

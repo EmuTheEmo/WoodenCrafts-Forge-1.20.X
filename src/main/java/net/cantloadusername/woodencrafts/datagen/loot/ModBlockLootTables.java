@@ -16,6 +16,15 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.ACACIA_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.BAMBOO_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.BIRCH_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.CHERRY_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.CRIMSON_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.DARK_OAK_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.JUNGLE_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.MANGROVE_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.SPRUCE_CRAFTING_TABLE.get());
+        this.dropSelf(ModBlocks.WARPED_CRAFTING_TABLE.get());
     }
 
     @Override

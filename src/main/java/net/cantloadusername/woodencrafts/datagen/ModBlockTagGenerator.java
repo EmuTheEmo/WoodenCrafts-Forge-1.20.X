@@ -19,6 +19,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
-                .add(ModBlocks.ACACIA_CRAFTING_TABLE.get());
+                .add(ModBlocks.ACACIA_CRAFTING_TABLE.get())
+                .add(ModBlocks.BAMBOO_CRAFTING_TABLE.get())
+                .add(ModBlocks.BIRCH_CRAFTING_TABLE.get())
+                .add(ModBlocks.CHERRY_CRAFTING_TABLE.get())
+                .add(ModBlocks.CRIMSON_CRAFTING_TABLE.get())
+                .add(ModBlocks.DARK_OAK_CRAFTING_TABLE.get())
+                .add(ModBlocks.JUNGLE_CRAFTING_TABLE.get())
+                .add(ModBlocks.MANGROVE_CRAFTING_TABLE.get())
+                .add(ModBlocks.SPRUCE_CRAFTING_TABLE.get())
+                .add(ModBlocks.WARPED_CRAFTING_TABLE.get());
     }
 }

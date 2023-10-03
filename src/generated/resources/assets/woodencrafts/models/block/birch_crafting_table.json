@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "minecraft:block/birch_planks",
+    "front": "woodencrafts:block/birch_crafting_table_front",
+    "side": "woodencrafts:block/birch_crafting_table_side",
+    "top": "woodencrafts:block/birch_crafting_table_top"
+  }
+}

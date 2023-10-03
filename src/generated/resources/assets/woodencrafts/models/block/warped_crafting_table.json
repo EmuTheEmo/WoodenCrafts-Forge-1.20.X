@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "minecraft:block/warped_planks",
+    "front": "woodencrafts:block/warped_crafting_table_front",
+    "side": "woodencrafts:block/warped_crafting_table_side",
+    "top": "woodencrafts:block/warped_crafting_table_top"
+  }
+}

@@ -1,2 +1,11 @@
-// 1.20.1	2023-09-28T14:48:52.3331917	Loot Tables
+// 1.20.1	2023-10-03T14:07:45.0657355	Loot Tables
 9f51f10899d14f800633e5838f76824605d83ab2 data/woodencrafts/loot_tables/blocks/acacia_crafting_table.json
+507bcbe208f27639729e6404f2f5400510588e7f data/woodencrafts/loot_tables/blocks/bamboo_crafting_table.json
+19a7c09ea526da0123055b3f982cd02e7ea62320 data/woodencrafts/loot_tables/blocks/birch_crafting_table.json
+6ff7b89577b716ae320eb2035b02886b1e8df6da data/woodencrafts/loot_tables/blocks/cherry_crafting_table.json
+e10f30ce9798b0b8e5603e8a4e2e24e37ace8e83 data/woodencrafts/loot_tables/blocks/crimson_crafting_table.json
+98ef6f735e8a1e512dc6e465ffc9eafedf5d085c data/woodencrafts/loot_tables/blocks/dark_oak_crafting_table.json
+ce4a9befad9973c16321da65afcf88d902ef9508 data/woodencrafts/loot_tables/blocks/jungle_crafting_table.json
+0150dc78953444c3448bd62c14995415155a37de data/woodencrafts/loot_tables/blocks/mangrove_crafting_table.json
+95e59f3cf0f0ddf4f61a4cd799d5a60c7eb3ba46 data/woodencrafts/loot_tables/blocks/spruce_crafting_table.json
+63cdba8b4fd017d226d402ac7ef19f4248f8edd6 data/woodencrafts/loot_tables/blocks/warped_crafting_table.json

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable_with_bottom",
+  "textures": {
+    "bottom": "minecraft:block/bamboo_planks",
+    "front": "woodencrafts:block/bamboo_crafting_table_front",
+    "side": "woodencrafts:block/bamboo_crafting_table_side",
+    "top": "woodencrafts:block/bamboo_crafting_table_top"
+  }
+}

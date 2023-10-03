@@ -1,5 +1,14 @@
 {
   "values": [
-    "woodencrafts:acacia_crafting_table"
+    "woodencrafts:acacia_crafting_table",
+    "woodencrafts:bamboo_crafting_table",
+    "woodencrafts:birch_crafting_table",
+    "woodencrafts:cherry_crafting_table",
+    "woodencrafts:crimson_crafting_table",
+    "woodencrafts:dark_oak_crafting_table",
+    "woodencrafts:jungle_crafting_table",
+    "woodencrafts:mangrove_crafting_table",
+    "woodencrafts:spruce_crafting_table",
+    "woodencrafts:warped_crafting_table"
   ]
 }
