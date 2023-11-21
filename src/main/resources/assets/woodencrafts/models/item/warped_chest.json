@@ -1,0 +1,6 @@
+{
+  "parent": "woodencrafts:block/modchest",
+  "textures": {
+    "chest": "woodencrafts:chest/warped_chest"
+  }
+}

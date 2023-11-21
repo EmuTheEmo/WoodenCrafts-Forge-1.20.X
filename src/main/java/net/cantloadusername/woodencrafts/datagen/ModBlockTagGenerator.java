@@ -28,6 +28,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.JUNGLE_CRAFTING_TABLE.get())
                 .add(ModBlocks.MANGROVE_CRAFTING_TABLE.get())
                 .add(ModBlocks.SPRUCE_CRAFTING_TABLE.get())
-                .add(ModBlocks.WARPED_CRAFTING_TABLE.get());
+                .add(ModBlocks.WARPED_CRAFTING_TABLE.get())
+                .add(ModBlocks.ACACIA_CHEST.get());
     }
 }

@@ -30,6 +30,17 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.MANGROVE_CRAFTING_TABLE.get());
                         pOutput.accept(ModBlocks.SPRUCE_CRAFTING_TABLE.get());
                         pOutput.accept(ModBlocks.WARPED_CRAFTING_TABLE.get());
+
+                        pOutput.accept(ModBlocks.ACACIA_CHEST.get());
+                        pOutput.accept(ModBlocks.BAMBOO_CHEST.get());
+                        pOutput.accept(ModBlocks.BIRCH_CHEST.get());
+                        pOutput.accept(ModBlocks.CHERRY_CHEST.get());
+                        pOutput.accept(ModBlocks.CRIMSON_CHEST.get());
+                        pOutput.accept(ModBlocks.DARK_OAK_CHEST.get());
+                        pOutput.accept(ModBlocks.JUNGLE_CHEST.get());
+                        pOutput.accept(ModBlocks.MANGROVE_CHEST.get());
+                        pOutput.accept(ModBlocks.SPRUCE_CHEST.get());
+                        pOutput.accept(ModBlocks.WARPED_CHEST.get());
                     })
                     .build());
 

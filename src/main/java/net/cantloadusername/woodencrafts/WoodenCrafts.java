@@ -3,12 +3,15 @@ package net.cantloadusername.woodencrafts;
 import com.mojang.logging.LogUtils;
 import net.cantloadusername.woodencrafts.block.ModBlocks;
 import net.cantloadusername.woodencrafts.container.ModContainers;
+import net.cantloadusername.woodencrafts.entity.EntityInitialise;
 import net.cantloadusername.woodencrafts.item.ModCreativeModTabs;
 import net.cantloadusername.woodencrafts.item.ModItems;
+import net.cantloadusername.woodencrafts.renderer.ModChestRenderer;
 import net.cantloadusername.woodencrafts.screen.ModCraftingScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -20,7 +23,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(WoodenCrafts.MOD_ID)
 public class WoodenCrafts {
 
@@ -36,21 +38,30 @@ public class WoodenCrafts {
         ModBlocks.register(modEventBus);
         ModContainers.register(modEventBus);
 
+        EntityInitialise.registerBlockEntities();
+
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::registerChestEntityRenders);
 
         MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
+    }
+
+    @SubscribeEvent
+    public void registerChestEntityRenders(EntityRenderersEvent.RegisterRenderers event){
+        event.registerBlockEntityRenderer(EntityInitialise.ACACIA_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.BAMBOO_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.BIRCH_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.CHERRY_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.CRIMSON_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.DARK_OAK_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.JUNGLE_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.MANGROVE_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.SPRUCE_CHEST.get(), ModChestRenderer::new);
+        event.registerBlockEntityRenderer(EntityInitialise.WARPED_CHEST.get(), ModChestRenderer::new);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModBlocks.ACACIA_CRAFTING_TABLE);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -67,4 +78,5 @@ public class WoodenCrafts {
             MenuScreens.register(ModContainers.MOD_CRAFTING_CONTAINER.get(), ModCraftingScreen::new);
         }
     }
+
 }
