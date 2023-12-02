@@ -8,12 +8,11 @@ import net.cantloadusername.woodencrafts.item.ModCreativeModTabs;
 import net.cantloadusername.woodencrafts.item.ModItems;
 import net.cantloadusername.woodencrafts.renderer.ModChestRenderer;
 import net.cantloadusername.woodencrafts.screen.ModCraftingScreen;
+import net.cantloadusername.woodencrafts.util.ModPOITypes;
 import net.minecraft.client.gui.screens.MenuScreens;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,6 +30,8 @@ public class WoodenCrafts {
 
     public WoodenCrafts() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModPOITypes.POI_TYPES.register(modEventBus);
 
         ModCreativeModTabs.register(modEventBus);
 
@@ -76,6 +77,7 @@ public class WoodenCrafts {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             MenuScreens.register(ModContainers.MOD_CRAFTING_CONTAINER.get(), ModCraftingScreen::new);
+
         }
     }
 

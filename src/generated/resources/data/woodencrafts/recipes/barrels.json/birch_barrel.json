@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:birch_planks"
+    },
+    "_": {
+      "item": "minecraft:birch_slab"
+    }
+  },
+  "pattern": [
+    "#_#",
+    "# #",
+    "#_#"
+  ],
+  "result": {
+    "item": "woodencrafts:birch_barrel"
+  },
+  "show_notification": true
+}

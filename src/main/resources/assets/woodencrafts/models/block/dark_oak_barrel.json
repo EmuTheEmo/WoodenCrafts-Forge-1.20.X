@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "woodencrafts:block/dark_oak_barrel_bottom",
+    "side": "woodencrafts:block/dark_oak_barrel_side",
+    "top": "woodencrafts:block/dark_oak_barrel_top"
+  }
+}

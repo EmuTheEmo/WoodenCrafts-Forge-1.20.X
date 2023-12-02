@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "woodencrafts:block/mangrove_barrel_bottom",
+    "side": "woodencrafts:block/mangrove_barrel_side",
+    "top": "woodencrafts:block/mangrove_barrel_top_open"
+  }
+}

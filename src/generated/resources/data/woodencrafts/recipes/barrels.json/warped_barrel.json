@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:warped_planks"
+    },
+    "_": {
+      "item": "minecraft:warped_slab"
+    }
+  },
+  "pattern": [
+    "#_#",
+    "# #",
+    "#_#"
+  ],
+  "result": {
+    "item": "woodencrafts:warped_barrel"
+  },
+  "show_notification": true
+}

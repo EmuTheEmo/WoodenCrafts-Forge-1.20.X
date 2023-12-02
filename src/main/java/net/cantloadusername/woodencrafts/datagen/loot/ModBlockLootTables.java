@@ -36,6 +36,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.MANGROVE_CHEST.get());
         this.dropSelf(ModBlocks.SPRUCE_CHEST.get());
         this.dropSelf(ModBlocks.WARPED_CHEST.get());
+
+        this.dropSelf(ModBlocks.ACACIA_BARREL.get());
+        this.dropSelf(ModBlocks.BAMBOO_BARREL.get());
+        this.dropSelf(ModBlocks.BIRCH_BARREL.get());
+        this.dropSelf(ModBlocks.CHERRY_BARREL.get());
+        this.dropSelf(ModBlocks.CRIMSON_BARREL.get());
+        this.dropSelf(ModBlocks.DARK_OAK_BARREL.get());
+        this.dropSelf(ModBlocks.JUNGLE_BARREL.get());
+        this.dropSelf(ModBlocks.MANGROVE_BARREL.get());
+        this.dropSelf(ModBlocks.OAK_BARREL.get());
+        this.dropSelf(ModBlocks.WARPED_BARREL.get());
     }
 
     @Override

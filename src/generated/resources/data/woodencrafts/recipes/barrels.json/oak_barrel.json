@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_planks"
+    },
+    "_": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "pattern": [
+    "#_#",
+    "# #",
+    "#_#"
+  ],
+  "result": {
+    "item": "woodencrafts:oak_barrel"
+  },
+  "show_notification": true
+}

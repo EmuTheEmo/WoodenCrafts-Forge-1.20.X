@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cherry_planks"
+    },
+    "_": {
+      "item": "minecraft:cherry_slab"
+    }
+  },
+  "pattern": [
+    "#_#",
+    "# #",
+    "#_#"
+  ],
+  "result": {
+    "item": "woodencrafts:cherry_barrel"
+  },
+  "show_notification": true
+}

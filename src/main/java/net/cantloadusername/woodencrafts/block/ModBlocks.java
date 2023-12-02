@@ -1,14 +1,13 @@
 package net.cantloadusername.woodencrafts.block;
 
 import net.cantloadusername.woodencrafts.WoodenCrafts;
-import net.cantloadusername.woodencrafts.block.custom.ModCraftingTableBlock;
-import net.cantloadusername.woodencrafts.block.custom.ModChestBlock;
-import net.cantloadusername.woodencrafts.block.custom.ModChests;
+import net.cantloadusername.woodencrafts.block.custom.*;
 import net.cantloadusername.woodencrafts.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.level.block.BarrelBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -56,26 +55,55 @@ public class ModBlocks {
             () -> new ModCraftingTableBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
     //</editor-fold>
 
-    public static final RegistryObject<Block> ACACIA_CHEST = registerChest("acacia_chest",
+    //<editor-fold desc="Chests">
+    public static final RegistryObject<Block> ACACIA_CHEST = register("acacia_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS), ModChests.ACACIA), 300);
-    public static final RegistryObject<Block> BAMBOO_CHEST = registerChest("bamboo_chest",
+    public static final RegistryObject<Block> BAMBOO_CHEST = register("bamboo_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.BAMBOO_PLANKS), ModChests.BAMBOO), 300);
-    public static final RegistryObject<Block> BIRCH_CHEST = registerChest("birch_chest",
+    public static final RegistryObject<Block> BIRCH_CHEST = register("birch_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.BIRCH_PLANKS), ModChests.BIRCH), 300);
-    public static final RegistryObject<Block> CHERRY_CHEST = registerChest("cherry_chest",
+    public static final RegistryObject<Block> CHERRY_CHEST = register("cherry_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CHERRY_PLANKS), ModChests.CHERRY), 300);
-    public static final RegistryObject<Block> CRIMSON_CHEST = registerChest("crimson_chest",
+    public static final RegistryObject<Block> CRIMSON_CHEST = register("crimson_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_PLANKS), ModChests.CRIMSON), 0);
-    public static final RegistryObject<Block> DARK_OAK_CHEST = registerChest("dark_oak_chest",
+    public static final RegistryObject<Block> DARK_OAK_CHEST = register("dark_oak_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.DARK_OAK_PLANKS), ModChests.DARK_OAK), 300);
-    public static final RegistryObject<Block> JUNGLE_CHEST = registerChest("jungle_chest",
+    public static final RegistryObject<Block> JUNGLE_CHEST = register("jungle_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.JUNGLE_PLANKS), ModChests.JUNGLE), 300);
-    public static final RegistryObject<Block> MANGROVE_CHEST = registerChest("mangrove_chest",
+    public static final RegistryObject<Block> MANGROVE_CHEST = register("mangrove_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.MANGROVE_PLANKS), ModChests.MANGROVE), 300);
-    public static final RegistryObject<Block> SPRUCE_CHEST = registerChest("spruce_chest",
+    public static final RegistryObject<Block> SPRUCE_CHEST = register("spruce_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.SPRUCE_PLANKS), ModChests.SPRUCE), 300);
-    public static final RegistryObject<Block> WARPED_CHEST = registerChest("warped_chest",
+    public static final RegistryObject<Block> WARPED_CHEST = register("warped_chest",
             () -> new ModChestBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_PLANKS), ModChests.WARPED), 0);
+    //</editor-fold>
+
+    //<editor-fold desc="Barrels">
+    public static final RegistryObject<Block> ACACIA_BARREL = register("acacia_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.ACACIA), 300);
+    public static final RegistryObject<Block> BAMBOO_BARREL = register("bamboo_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.BAMBOO), 300);
+    public static final RegistryObject<Block> BIRCH_BARREL = register("birch_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.BIRCH), 300);
+    public static final RegistryObject<Block> CHERRY_BARREL = register("cherry_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.CHERRY), 300);
+    public static final RegistryObject<Block> CRIMSON_BARREL = register("crimson_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.CRIMSON), 0);
+    public static final RegistryObject<Block> DARK_OAK_BARREL = register("dark_oak_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.DARK_OAK), 300);
+    public static final RegistryObject<Block> JUNGLE_BARREL = register("jungle_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.JUNGLE), 300);
+    public static final RegistryObject<Block> MANGROVE_BARREL = register("mangrove_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.MANGROVE), 300);
+    public static final RegistryObject<Block> OAK_BARREL = register("oak_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.OAK), 300);
+    public static final RegistryObject<Block> WARPED_BARREL = register("warped_barrel",
+            () -> new ModBarrelBlock(BlockBehaviour.Properties.copy(Blocks.BARREL), ModBarrelTypes.WARPED), 0);
+    //</editor-fold>
+
+
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -83,13 +111,13 @@ public class ModBlocks {
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<T> registerChest(String name, Supplier<T> block, int burnTime) {
+    private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block, int burnTime) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerChestItem(name, toReturn, burnTime);
+        registerItem(name, toReturn, burnTime);
         return toReturn;
     }
 
-    private static <T extends Block> void registerChestItem(String name, RegistryObject<T> block, int burnTime) {
+    private static <T extends Block> void registerItem(String name, RegistryObject<T> block, int burnTime) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()) {
             @Override
             public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {

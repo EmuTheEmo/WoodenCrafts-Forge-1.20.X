@@ -1,2 +1,5 @@
-// 1.20.1	2023-11-21T14:44:57.6638267	Tags for minecraft:block mod id woodencrafts
-7ce20ba3e7653249b447669044ff98fb444e5906 data/minecraft/tags/blocks/mineable/axe.json
+// 1.20.1	2023-12-02T13:01:13.9554135	Tags for minecraft:block mod id woodencrafts
+439abb5ec145a806df09eb5a6853c98b1f3ce63a data/forge/tags/blocks/barrels/wooden.json
+439abb5ec145a806df09eb5a6853c98b1f3ce63a data/minecraft/tags/blocks/guarded_by_piglins.json
+b6b92d5721032c4d40ca4ff9058e264b1292aa44 data/minecraft/tags/blocks/mineable/axe.json
+439abb5ec145a806df09eb5a6853c98b1f3ce63a data/woodencrafts/tags/blocks/barrels.json.json

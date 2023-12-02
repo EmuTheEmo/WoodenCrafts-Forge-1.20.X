@@ -9,7 +9,6 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -25,6 +24,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         addCraftingTableRecipes(pWriter);
         addChestRecipes(pWriter);
+        addBarrelsRecipes(pWriter);
 
     }
 
@@ -134,8 +134,109 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .unlockedBy(getHasName(Items.WARPED_PLANKS), has(Items.WARPED_PLANKS))
                 .save(pWriter, location(folder + "warped_chest"));
+    }
 
-
+    private void addBarrelsRecipes(Consumer<FinishedRecipe> pWriter){
+        String folder = "barrels.json/";
+        //Acacia
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.ACACIA_BARREL.get())
+                .define('#', Items.ACACIA_PLANKS)
+                .define('_', Items.ACACIA_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.ACACIA_PLANKS), has(Items.ACACIA_PLANKS))
+                .save(pWriter, location(folder + "acacia_barrel"));
+        //Bamboo
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.BAMBOO_BARREL.get())
+                .define('#', Items.BAMBOO_PLANKS)
+                .define('_', Items.BAMBOO_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.BAMBOO_PLANKS), has(Items.BAMBOO_PLANKS))
+                .save(pWriter, location(folder + "bamboo_barrel"));
+        //Birch
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.BIRCH_BARREL.get())
+                .define('#', Items.BIRCH_PLANKS)
+                .define('_', Items.BIRCH_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.BIRCH_PLANKS), has(Items.BIRCH_PLANKS))
+                .save(pWriter, location(folder + "birch_barrel"));
+        //Cherry
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.CHERRY_BARREL.get())
+                .define('#', Items.CHERRY_PLANKS)
+                .define('_', Items.CHERRY_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.CHERRY_PLANKS), has(Items.CHERRY_PLANKS))
+                .save(pWriter, location(folder + "cherry_barrel"));
+        //Crimson
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.CRIMSON_BARREL.get())
+                .define('#', Items.CRIMSON_PLANKS)
+                .define('_', Items.CRIMSON_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.CRIMSON_PLANKS), has(Items.CRIMSON_PLANKS))
+                .save(pWriter, location(folder + "crimson_barrel"));
+        //Dark Oak
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.DARK_OAK_BARREL.get())
+                .define('#', Items.DARK_OAK_PLANKS)
+                .define('_', Items.DARK_OAK_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.DARK_OAK_PLANKS), has(Items.DARK_OAK_PLANKS))
+                .save(pWriter, location(folder + "dark_oak_barrel"));
+        //Jungle
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.JUNGLE_BARREL.get())
+                .define('#', Items.JUNGLE_PLANKS)
+                .define('_', Items.JUNGLE_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.JUNGLE_PLANKS), has(Items.JUNGLE_PLANKS))
+                .save(pWriter, location(folder + "jungle_barrel"));
+        //Mangrove
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MANGROVE_BARREL.get())
+                .define('#', Items.MANGROVE_PLANKS)
+                .define('_', Items.MANGROVE_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.MANGROVE_PLANKS), has(Items.MANGROVE_PLANKS))
+                .save(pWriter, location(folder + "mangrove_barrel"));
+        //Oak
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.OAK_BARREL.get())
+                .define('#', Items.OAK_PLANKS)
+                .define('_', Items.OAK_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.OAK_PLANKS), has(Items.OAK_PLANKS))
+                .save(pWriter, location(folder + "oak_barrel"));
+        //Spruce
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, Blocks.BARREL)
+                .define('#', Items.SPRUCE_PLANKS)
+                .define('_', Items.SPRUCE_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.SPRUCE_PLANKS), has(Items.SPRUCE_PLANKS))
+                .save(pWriter);
+        //Warped
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.WARPED_BARREL.get())
+                .define('#', Items.WARPED_PLANKS)
+                .define('_', Items.WARPED_SLAB)
+                .pattern("#_#")
+                .pattern("# #")
+                .pattern("#_#")
+                .unlockedBy(getHasName(Items.WARPED_PLANKS), has(Items.WARPED_PLANKS))
+                .save(pWriter, location(folder + "warped_barrel"));
     }
 
     private static ResourceLocation location(String id) {

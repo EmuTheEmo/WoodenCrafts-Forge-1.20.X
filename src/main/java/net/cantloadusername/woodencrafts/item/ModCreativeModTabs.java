@@ -20,6 +20,17 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("wc.items_tab"))
                     .displayItems((pParameters, pOutput) -> {
 
+                        pOutput.accept(ModBlocks.ACACIA_BARREL.get());
+                        pOutput.accept(ModBlocks.BAMBOO_BARREL.get());
+                        pOutput.accept(ModBlocks.BIRCH_BARREL.get());
+                        pOutput.accept(ModBlocks.CHERRY_BARREL.get());
+                        pOutput.accept(ModBlocks.CRIMSON_BARREL.get());
+                        pOutput.accept(ModBlocks.DARK_OAK_BARREL.get());
+                        pOutput.accept(ModBlocks.JUNGLE_BARREL.get());
+                        pOutput.accept(ModBlocks.MANGROVE_BARREL.get());
+                        pOutput.accept(ModBlocks.OAK_BARREL.get());
+                        pOutput.accept(ModBlocks.WARPED_BARREL.get());
+
                         pOutput.accept(ModBlocks.ACACIA_CRAFTING_TABLE.get());
                         pOutput.accept(ModBlocks.BAMBOO_CRAFTING_TABLE.get());
                         pOutput.accept(ModBlocks.BIRCH_CRAFTING_TABLE.get());
@@ -41,6 +52,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.MANGROVE_CHEST.get());
                         pOutput.accept(ModBlocks.SPRUCE_CHEST.get());
                         pOutput.accept(ModBlocks.WARPED_CHEST.get());
+
+
                     })
                     .build());
 

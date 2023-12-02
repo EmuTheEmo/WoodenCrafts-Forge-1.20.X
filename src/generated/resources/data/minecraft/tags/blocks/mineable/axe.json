@@ -10,6 +10,25 @@
     "woodencrafts:mangrove_crafting_table",
     "woodencrafts:spruce_crafting_table",
     "woodencrafts:warped_crafting_table",
-    "woodencrafts:acacia_chest"
+    "woodencrafts:acacia_chest",
+    "woodencrafts:bamboo_chest",
+    "woodencrafts:birch_chest",
+    "woodencrafts:cherry_chest",
+    "woodencrafts:crimson_chest",
+    "woodencrafts:dark_oak_chest",
+    "woodencrafts:jungle_chest",
+    "woodencrafts:mangrove_chest",
+    "woodencrafts:spruce_chest",
+    "woodencrafts:warped_chest",
+    "woodencrafts:acacia_barrel",
+    "woodencrafts:bamboo_barrel",
+    "woodencrafts:birch_barrel",
+    "woodencrafts:cherry_barrel",
+    "woodencrafts:crimson_barrel",
+    "woodencrafts:dark_oak_barrel",
+    "woodencrafts:jungle_barrel",
+    "woodencrafts:mangrove_barrel",
+    "woodencrafts:oak_barrel",
+    "woodencrafts:warped_barrel"
   ]
 }

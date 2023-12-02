@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:bamboo_planks"
+    },
+    "_": {
+      "item": "minecraft:bamboo_slab"
+    }
+  },
+  "pattern": [
+    "#_#",
+    "# #",
+    "#_#"
+  ],
+  "result": {
+    "item": "woodencrafts:bamboo_barrel"
+  },
+  "show_notification": true
+}
